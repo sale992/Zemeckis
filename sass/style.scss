@@ -2,17 +2,22 @@ $white: #ffffff;
 $black: #000000;
 $sans: 'PT Sans', sans-serif;
 $serif: 'PT Serif', serif;
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 html {
 	font-size: 62.5%;
 }
+
 body {
 	font-size: 62.5%;
+    text-align: center;
 }
+
 h1{
 	font-family: $serif;
 	font-size: 6rem;
@@ -29,13 +34,22 @@ h2 {
 	margin: 0 0 40px;
 	text-align: center;
 }
+span {
+    font-family: $sans;
+    font-size: 2rem;
+}
 .container {
 	max-width: 1400px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 40px;
 }
-
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
 .hero {
     background-image: url(assets/header.jpg);
     background-position: center;
@@ -45,5 +59,20 @@ h2 {
     &__wrapper {
         padding-top: 100px;
         color: $white;
+    }
+}
+
+.grid {
+    img {
+        width: 100%;
+    }
+    @media (min-width: 400px){
+        .box {
+            width: 50%;
+            height: 300px;
+            border: 1px solid black;
+            font-size: 2rem;
+            overflow: hidden;
+        }
     }
 }
