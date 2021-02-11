@@ -65,14 +65,26 @@ span {
 .grid {
     img {
         width: 100%;
+        height: auto;
     }
     @media (min-width: 400px){
         .box {
+            float: left;
             width: 50%;
-            height: 300px;
+            // height: 300px;
             border: 1px solid black;
             font-size: 2rem;
             overflow: hidden;
+            &:nth-child(even) {
+                float: right;
+            }
+        }
+        .b1 {
+            background-color: #86ddf3;
+            
+        }
+        .b2 {
+           padding: 50px 10px;
         }
     }
 }
