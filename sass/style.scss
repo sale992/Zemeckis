@@ -200,6 +200,9 @@ p {
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 400px;
+        @media (min-width: 768px) {
+            background-position: left;
+        }
     }
     @media (min-width: 400px){
         margin-top: 200px;
