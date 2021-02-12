@@ -254,6 +254,13 @@ p {
                 object-fit: cover;
                 height: 100%;
             }
+            .img-wrapper {
+                background-image: url(assets/footer.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                min-height: 400px;
+            }
         }
     }
 }
