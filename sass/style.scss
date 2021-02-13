@@ -48,6 +48,7 @@ span {
     font-size: 2rem;
 }
 p {
+    font-family: $sans;
     @media (max-width: 399px) {
         font-size: 1.6rem;
         margin-bottom: 10px;
